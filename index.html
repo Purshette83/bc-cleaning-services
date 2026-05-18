@@ -444,4 +444,260 @@ opacity:.9;
 
 .services{
 
-grid-template-columns:repeat(
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-right{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+header{
+
+justify-content:center;
+
+padding:16px 10px;
+
+}
+
+nav a{
+
+margin:0 8px;
+
+font-size:13px;
+
+}
+
+.hero{
+
+min-height:430px;
+
+padding:50px 25px;
+
+background:
+
+linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.88)),
+
+url("./IMG_5221.jpeg");
+
+background-size:cover;
+
+background-position:center;
+
+text-align:left;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+margin-bottom:10px;
+
+}
+
+.services{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery img{
+
+height:240px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="#home">HOME</a>
+
+<a href="#services">SERVICES</a>
+
+<a href="#gallery">GALLERY</a>
+
+<a href="#contact">CONTACT</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="tagline">Clean Spaces. Happy Faces.</div>
+
+<h1>Professional<br>Cleaning Services</h1>
+
+<p>
+
+We provide top-quality residential and commercial cleaning with attention to detail you can trust.
+
+</p>
+
+<a class="btn btn-purple" href="#services">OUR SERVICES</a>
+
+<a class="btn btn-yellow" href="mailto:bandccleaningservices@myyahoo.com">GET A FREE QUOTE</a>
+
+</div>
+
+</section>
+
+<h2 class="section-title">✦ Our Services ✦</h2>
+
+<section class="services" id="services">
+
+<div class="card">
+
+<div class="icon-circle">🏠</div>
+
+<h3>Residential Cleaning</h3>
+
+<p>Keep your home fresh, clean and comfortable.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon-circle">🏢</div>
+
+<h3>Commercial Cleaning</h3>
+
+<p>Professional cleaning for offices, stores and businesses.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon-circle">🧹</div>
+
+<h3>New Construction Cleaning</h3>
+
+<p>We remove dust and detail your new space from top to bottom.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon-circle">✨</div>
+
+<h3>Deep Cleaning</h3>
+
+<p>Detailed cleaning for a deeper, healthier environment.</p>
+
+</div>
+
+</section>
+
+<h2 class="gallery-title" id="gallery">Clean Spaces. <span>Happy Faces.</span></h2>
+
+<section class="gallery">
+
+<img src="./IMG_5221.jpeg" alt="Clean kitchen">
+
+<img src="./IMG_5223.jpeg" alt="Clean stairs">
+
+<img src="./IMG_5224.jpeg" alt="Clean living area">
+
+<img src="./IMG_6095.jpeg" alt="Clean space">
+
+<img src="./IMG_6098.jpeg" alt="Clean room">
+
+<img src="./IMG_6099.jpeg" alt="Clean kitchen">
+
+<img src="./IMG_6100.jpeg" alt="Professional cleaning">
+
+</section>
+
+<footer id="contact">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Contact Us</h3>
+
+<p>📞 (636) 297-3205</p>
+
+<p>✉️ bandccleaningservices@myyahoo.com</p>
+
+<p>📍 Warrenton, Wentzville, O’Fallon & surrounding areas</p>
+
+</div>
+
+<div class="footer-center">
+
+<img src="./IMG_6093.png" class="footer-logo" alt="B & C Cleaning Services Logo">
+
+<p><strong>Clean Spaces. Happy Faces.</strong></p>
+
+<div class="socials">● ●</div>
+
+</div>
+
+<div class="footer-right">
+
+<h3>Serving</h3>
+
+<p>Warrenton, Wentzville, O’Fallon & surrounding areas</p>
+
+<a class="quote-btn" href="mailto:bandccleaningservices@myyahoo.com">GET A FREE QUOTE</a>
+
+</div>
+
+</div>
+
+<p class="copyright">© 2025 B & C Cleaning Services. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
