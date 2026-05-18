@@ -1,581 +1,334 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>B & C Cleaning Services</title>
 
 <style>
 
 *{
-
 margin:0;
-
 padding:0;
-
 box-sizing:border-box;
-
 }
 
 body{
-
 font-family:Arial,sans-serif;
-
-background:#fff;
-
-color:#222;
-
+background:#ffffff;
+color:#1f1235;
 }
 
 /* HEADER */
 
 header{
-
-background:linear-gradient(135deg,#2d004d,#5c1499);
-
-padding:20px 40px;
-
+background:linear-gradient(135deg,#1f003d,#5b0aa3);
+padding:18px 5%;
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 }
 
 .top-logo{
-
-width:240px;
-
-max-width:100%;
-
+width:230px;
+mix-blend-mode:screen;
 }
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
 font-weight:bold;
-
 margin-left:35px;
-
-font-size:16px;
-
+font-size:17px;
 }
 
 nav a:first-child{
-
-border-bottom:4px solid #19c6c3;
-
-padding-bottom:6px;
-
+border-bottom:5px solid #19c6c3;
+padding-bottom:7px;
 }
 
 /* HERO */
 
 .hero{
-
 background:
-
-linear-gradient(to right,rgba(255,255,255,.92),rgba(255,255,255,.78),rgba(255,255,255,.10)),
-
+linear-gradient(to right,rgba(255,255,255,.96),rgba(255,255,255,.82),rgba(255,255,255,.10)),
 url('./IMG_5221.jpeg');
 
 background-size:cover;
-
 background-position:center;
-
-min-height:500px;
-
+min-height:520px;
 display:flex;
-
 align-items:center;
-
-padding:70px;
-
+padding:70px 5%;
 }
 
 .hero-content{
-
-max-width:620px;
-
+max-width:650px;
 }
 
 .tagline{
-
-color:#4b148c;
-
-font-weight:bold;
-
+color:#3b0070;
+font-weight:900;
 font-size:22px;
-
-margin-bottom:15px;
-
+margin-bottom:18px;
 text-transform:uppercase;
-
 }
 
 .hero h1{
-
-font-size:70px;
-
+font-size:72px;
 line-height:1;
-
-color:#4b148c;
-
 font-weight:900;
-
+color:#3b0070;
 margin-bottom:25px;
-
 text-transform:uppercase;
-
 }
 
 .hero p{
-
-font-size:23px;
-
+font-size:22px;
 line-height:1.5;
-
 margin-bottom:30px;
-
-max-width:580px;
-
+max-width:620px;
 }
 
 .btn{
-
 display:inline-block;
-
-padding:16px 32px;
-
+padding:16px 34px;
 border-radius:8px;
-
 font-weight:bold;
-
 text-decoration:none;
-
-margin-right:15px;
-
+margin-right:18px;
 font-size:18px;
-
 }
 
 .btn-purple{
-
-background:#5b0aa3;
-
+background:#4b008f;
 color:white;
-
 }
 
 .btn-teal{
-
 background:#19c6c3;
-
 color:white;
-
 }
 
 /* TITLES */
 
 .section-title{
-
 text-align:center;
-
 font-size:42px;
-
-color:#4b148c;
-
 font-weight:900;
-
-margin:40px 0 30px;
-
+color:#3b0070;
+margin:45px 0 30px;
 text-transform:uppercase;
-
 }
 
 .section-title span{
-
 color:#19c6c3;
-
 }
 
 /* SERVICES */
 
 .services{
-
-max-width:1200px;
-
+max-width:1300px;
 margin:auto;
-
-padding:0 20px 50px;
-
+padding:0 25px 60px;
 display:grid;
-
 grid-template-columns:repeat(4,1fr);
-
 gap:25px;
-
 }
 
 .card{
-
 background:white;
-
 padding:35px 25px;
-
 border-radius:15px;
-
-box-shadow:0 3px 15px rgba(0,0,0,.10);
-
+box-shadow:0 4px 18px rgba(0,0,0,.08);
 text-align:center;
-
 }
 
 .icon{
-
-width:90px;
-
-height:90px;
-
-background:#eee2f8;
-
+width:100px;
+height:100px;
+background:#efe4fb;
 border-radius:50%;
-
 display:flex;
-
-align-items:center;
-
 justify-content:center;
-
-font-size:42px;
-
+align-items:center;
+font-size:45px;
 margin:0 auto 20px;
-
 }
 
 .card h3{
-
-color:#4b148c;
-
+color:#3b0070;
 margin-bottom:15px;
-
 font-size:20px;
-
 }
 
 .card p{
-
-font-size:17px;
-
+font-size:18px;
 line-height:1.6;
-
 }
 
 /* GALLERY */
 
 .gallery-title{
-
 text-align:center;
-
 font-size:42px;
-
 font-weight:900;
-
-color:#4b148c;
-
+color:#3b0070;
 margin-bottom:30px;
-
 text-transform:uppercase;
-
 }
 
 .gallery-title span{
-
 color:#19c6c3;
-
 }
 
 .gallery{
-
-max-width:1200px;
-
+max-width:1300px;
 margin:auto;
-
-padding:0 20px 50px;
-
+padding:0 20px 60px;
 display:grid;
-
-grid-template-columns:repeat(5,1fr);
-
-gap:12px;
-
+grid-template-columns:repeat(7,1fr);
+gap:10px;
 }
 
 .gallery img{
-
 width:100%;
-
 height:180px;
-
 object-fit:cover;
-
 border-radius:8px;
-
 }
 
 /* FOOTER */
 
 footer{
-
-background:linear-gradient(135deg,#2d004d,#5c1499);
-
+background:linear-gradient(135deg,#1f003d,#5b0aa3);
 padding:50px 30px 25px;
-
 color:white;
-
 }
 
 .footer-grid{
-
-max-width:1200px;
-
+max-width:1300px;
 margin:auto;
-
 display:grid;
-
 grid-template-columns:1fr 1fr 1fr;
-
-gap:25px;
-
+gap:30px;
 align-items:center;
-
 }
 
 footer h3{
-
 color:#19c6c3;
-
-font-size:24px;
-
+font-size:28px;
 margin-bottom:18px;
-
 }
 
 footer p{
-
-font-size:17px;
-
+font-size:19px;
 line-height:1.8;
-
 }
 
 .footer-center{
-
 text-align:center;
-
 }
 
 .footer-logo{
-
-width:280px;
-
-max-width:100%;
-
+width:320px;
+mix-blend-mode:screen;
 margin-bottom:15px;
-
 }
 
-.footer-right{
-
-text-align:left;
-
+.footer-tag{
+color:#19c6c3;
+font-size:28px;
+font-weight:bold;
+margin-top:10px;
 }
 
 .quote-btn{
-
 display:inline-block;
-
 background:#19c6c3;
-
 color:white;
-
-padding:16px 28px;
-
+padding:18px 34px;
 border-radius:8px;
-
 font-weight:bold;
-
 text-decoration:none;
-
-margin-top:18px;
-
+margin-top:20px;
+font-size:20px;
 }
 
 .socials{
-
 margin-top:18px;
-
-font-size:28px;
-
+font-size:35px;
 }
 
 .copyright{
-
 text-align:center;
-
 margin-top:35px;
-
-font-size:15px;
-
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.2);
+font-size:18px;
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-.services{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.gallery{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.footer-grid{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
-}
-
-.footer-right{
-
-text-align:center;
-
-}
-
-.hero{
-
-padding:40px 25px;
-
-}
-
-.hero h1{
-
-font-size:48px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-
-}
-
-@media(max-width:600px){
-
 header{
-
-justify-content:center;
-
-padding:18px 10px;
-
 flex-direction:column;
-
+padding:20px;
 }
 
 .top-logo{
-
 margin-bottom:15px;
-
+width:260px;
 }
 
 nav a{
-
-margin:0 8px;
-
-font-size:13px;
-
+margin:0 10px;
+font-size:15px;
 }
 
 .hero{
-
-background:
-
-linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.88)),
-
-url('./IMG_5221.jpeg');
-
-background-size:cover;
-
-background-position:center;
-
-min-height:430px;
-
+padding:45px 25px;
+min-height:500px;
 }
 
 .hero h1{
+font-size:48px;
+}
 
-font-size:38px;
-
+.hero p{
+font-size:18px;
 }
 
 .services{
-
 grid-template-columns:1fr;
-
 }
 
 .gallery{
-
-grid-template-columns:1fr;
-
+grid-template-columns:repeat(2,1fr);
 }
 
-.gallery img{
-
-height:240px;
-
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<<img src="./IMG_4398.jpeg" class="top-logo">
+<img src="./IMG_4398.jpeg" class="top-logo">
 
 <nav>
-
 <a href="#">HOME</a>
-
 <a href="#">SERVICES</a>
-
 <a href="#">GALLERY</a>
-
 <a href="#">CONTACT</a>
-
 </nav>
 
 </header>
@@ -585,35 +338,24 @@ height:240px;
 <div class="hero-content">
 
 <div class="tagline">
-
 CLEAN SPACES. HAPPY FACES.
-
 </div>
 
 <h1>
-
 PROFESSIONAL<br>
-
 CLEANING SERVICES
-
 </h1>
 
 <p>
-
 We provide top-quality residential and commercial cleaning with attention to detail you can trust.
-
 </p>
 
-<a class="btn btn-purple" href="#">
-
+<a href="#" class="btn btn-purple">
 OUR SERVICES
-
 </a>
 
-<a class="btn btn-teal" href="mailto:bandccleaningservices@myyahoo.com">
-
+<a href="mailto:bandccleaningservices@myyahoo.com" class="btn btn-teal">
 GET A FREE QUOTE
-
 </a>
 
 </div>
@@ -621,91 +363,57 @@ GET A FREE QUOTE
 </section>
 
 <h2 class="section-title">
-
 ✦ OUR <span>SERVICES</span> ✦
-
 </h2>
 
 <section class="services">
 
 <div class="card">
-
 <div class="icon">🏠</div>
-
 <h3>RESIDENTIAL CLEANING</h3>
-
 <p>
-
 Keep your home fresh, clean and comfortable.
-
 </p>
-
 </div>
 
 <div class="card">
-
 <div class="icon">🏢</div>
-
 <h3>COMMERCIAL CLEANING</h3>
-
 <p>
-
 Professional cleaning for offices, stores and businesses.
-
 </p>
-
 </div>
 
 <div class="card">
-
 <div class="icon">🧹</div>
-
 <h3>NEW CONSTRUCTION CLEANING</h3>
-
 <p>
-
 We remove dust and detail your new space from top to bottom.
-
 </p>
-
 </div>
 
 <div class="card">
-
 <div class="icon">✨</div>
-
 <h3>DEEP CLEANING</h3>
-
 <p>
-
 Detailed cleaning for a deeper, healthier environment.
-
 </p>
-
 </div>
 
 </section>
 
 <h2 class="gallery-title">
-
 CLEAN SPACES. <span>HAPPY FACES.</span>
-
 </h2>
 
 <section class="gallery">
 
 <img src="./IMG_5221.jpeg">
-
 <img src="./IMG_5223.jpeg">
-
 <img src="./IMG_5224.jpeg">
-
 <img src="./IMG_6095.jpeg">
-
 <img src="./IMG_6098.jpeg">
-
 <img src="./IMG_6099.jpeg">
-
 <img src="./IMG_6100.jpeg">
 
 </section>
@@ -728,32 +436,28 @@ CLEAN SPACES. <span>HAPPY FACES.</span>
 
 <div class="footer-center">
 
-<im<img src="./IMG_4398.jpeg" class="top-logo">
+<img src="./IMG_4398.jpeg" class="footer-logo">
 
-<p><strong>Clean Spaces. Happy Faces.</strong></p>
+<div class="footer-tag">
+CLEAN SPACES. HAPPY FACES.
+</div>
 
 <div class="socials">
-
 ● ●
-
 </div>
 
 </div>
 
-<div class="footer-right">
+<div>
 
 <h3>SERVING</h3>
 
 <p>
-
 Warrenton, Wentzville, O’Fallon & surrounding areas
-
 </p>
 
-<a class="quote-btn" href="mailto:bandccleaningservices@myyahoo.com">
-
+<a href="mailto:bandccleaningservices@myyahoo.com" class="quote-btn">
 GET A FREE QUOTE
-
 </a>
 
 </div>
@@ -761,13 +465,10 @@ GET A FREE QUOTE
 </div>
 
 <div class="copyright">
-
 © 2025 B & C Cleaning Services. All Rights Reserved.
-
 </div>
 
 </footer>
 
 </body>
-
 </html>
