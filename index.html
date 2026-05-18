@@ -1,551 +1,434 @@
-<!DOCTYPE html>
+
+     <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>B & C Cleaning Services</title>
-  
-    <style>
+<title>B & C Cleaning Services</title>
 
-    * {
+<style>
 
-      box-sizing: border-box;
+body{
 
-    }
+margin:0;
 
-    body {
+font-family:Arial,sans-serif;
 
-      margin: 0;
+background:#3d0075;
 
-      font-family: Arial, sans-serif;
+color:white;
 
-      background: #ffffff;
+}
 
-      color: #1f1235;
+header{
 
-    }
+background:#4b008f;
 
-    header {
+padding:20px;
 
-      background: linear-gradient(135deg, #4b148c, #210047);
+text-align:center;
 
-      padding: 18px 25px;
+}
 
-      display: flex;
+.logo{
 
-      align-items: center;
+width:220px;
 
-      justify-content: space-between;
+max-width:90%;
 
-      flex-wrap: wrap;
+}
 
-    }
+.hero{
 
-    .logo {
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
 
-      max-width: 230px;
+url('./IMG_5221.jpeg');
 
-      width: 70%;
+background-size:cover;
 
-    }
+background-position:center;
 
-    nav a {
+text-align:center;
 
-      color: white;
+padding:90px 20px;
 
-      text-decoration: none;
+}
 
-      font-weight: bold;
+.hero h1{
 
-      margin-left: 22px;
+font-size:48px;
 
-      font-size: 14px;
+margin:10px 0;
 
-    }
+font-weight:bold;
 
-    nav a:hover {
+}
 
-      color: #ffd400;
+.hero span{
 
-    }
+color:#ffd400;
 
-    .hero {
+}
 
-      background:
+.hero p{
 
-        linear-gradient(to right, rgba(255,255,255,.95), rgba(255,255,255,.75), rgba(255,255,255,.1)),
+font-size:20px;
 
-        url("IMG_5221.jpeg");
+max-width:700px;
 
-      background-size: cover;
+margin:auto;
 
-      background-position: center;
+line-height:1.5;
 
-      padding: 90px 25px;
+}
 
-    }
+.buttons{
 
-    .hero-content {
+margin-top:30px;
 
-      max-width: 650px;
+}
 
-    }
+.btn{
 
-    .tagline {
+display:inline-block;
 
-      color: #4b148c;
+padding:15px 28px;
 
-      font-weight: bold;
+margin:10px;
 
-      letter-spacing: 1px;
+border-radius:10px;
 
-      text-transform: uppercase;
+font-weight:bold;
 
-      font-size: 18px;
+text-decoration:none;
 
-    }
+font-size:18px;
 
-    .hero h1 {
+}
 
-      font-size: 52px;
+.btn-purple{
 
-      line-height: 1.05;
+background:#6a0dad;
 
-      margin: 12px 0;
+color:white;
 
-      color: #3b0a75;
+}
 
-      text-transform: uppercase;
+.btn-yellow{
 
-    }
+background:#ffd400;
 
-    .hero p {
+color:black;
 
-      font-size: 20px;
+}
 
-      line-height: 1.5;
+.section-title{
 
-      max-width: 560px;
+text-align:center;
 
-    }
+font-size:42px;
 
-    .buttons {
+margin-top:50px;
 
-      margin-top: 25px;
+margin-bottom:30px;
 
-    }
+font-weight:bold;
 
-    .btn {
+}
 
-      display: inline-block;
+.section-title span{
 
-      padding: 15px 24px;
+color:#ffd400;
 
-      border-radius: 8px;
+}
 
-      text-decoration: none;
+.services{
 
-      font-weight: bold;
+display:grid;
 
-      margin: 8px 8px 8px 0;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-    }
+gap:20px;
 
-    .btn-purple {
+padding:20px;
 
-      background: #4b148c;
+}
 
-      color: white;
+.card{
 
-    }
+background:white;
 
-    .btn-yellow {
+color:#2d004d;
 
-      background: #ffd400;
+padding:25px;
 
-      color: #210047;
+border-radius:15px;
 
-    }
+text-align:center;
 
-    section {
+}
 
-      padding: 45px 25px;
+.card h3{
 
-      text-align: center;
+margin-top:15px;
 
-    }
+font-size:22px;
 
-    h2 {
+}
 
-      color: #3b0a75;
+.gallery{
 
-      font-size: 36px;
+padding:20px;
 
-      margin-bottom: 25px;
+}
 
-      text-transform: uppercase;
+.photos{
 
-    }
+display:grid;
 
-    .services {
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-      display: grid;
+gap:15px;
 
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
 
-      gap: 22px;
+.photos img{
 
-      max-width: 1100px;
+width:100%;
 
-      margin: auto;
+height:220px;
 
-    }
+object-fit:cover;
 
-    .card {
+border-radius:12px;
 
-      background: white;
+border:4px solid #6a0dad;
 
-      padding: 30px 22px;
+}
 
-      border-radius: 14px;
+footer{
 
-      box-shadow: 0 6px 18px rgba(0,0,0,.10);
+background:#2b004f;
 
-      border: 1px solid #eee;
+padding:40px 20px;
 
-    }
+text-align:center;
 
-    .icon {
+margin-top:50px;
 
-      font-size: 42px;
+}
 
-      margin-bottom: 12px;
+footer h2{
 
-    }
+color:#ffd400;
 
-    .card h3 {
+}
 
-      color: #4b148c;
+footer p{
 
-      text-transform: uppercase;
+font-size:18px;
 
-      font-size: 18px;
+line-height:1.8;
 
-    }
+}
 
-    .card p {
+.quote-btn{
 
-      line-height: 1.5;
+display:inline-block;
 
-    }
+margin-top:20px;
 
-    .gallery {
+background:#ffd400;
 
-      background: #210047;
+color:black;
 
-      color: white;
+padding:15px 30px;
 
-    }
+border-radius:10px;
 
-    .gallery h2 {
+font-weight:bold;
 
-      color: white;
+text-decoration:none;
 
-    }
+}
 
-    .gallery span {
+@media(max-width:768px){
 
-      color: #ffd400;
+.hero h1{
 
-    }
+font-size:34px;
 
-    .photos {
+}
 
-      display: grid;
+.section-title{
 
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+font-size:32px;
 
-      gap: 15px;
+}
 
-      max-width: 1100px;
+}
 
-      margin: auto;
+</style>
 
-    }
+</head>
 
-    .photos img {
+<body>
 
-      width: 100%;
+<header>
 
-      height: 210px;
+<img src="./IMG_6093.png" class="logo" alt="B & C Cleaning Services Logo">
 
-      object-fit: cover;
+</header>
 
-      border-radius: 12px;
+<section class="hero">
 
-      border: 3px solid #4b148c;
+<h1>
 
-      background: white;
+PROFESSIONAL <br>
 
-    }
+CLEANING <span>SERVICES</span>
 
-    footer {
-
-      background: linear-gradient(135deg, #4b148c, #210047);
-
-      color: white;
-
-      padding: 45px 25px 25px;
-
-      text-align: center;
-
-    }
-
-    footer img {
-
-      max-width: 280px;
-
-      width: 80%;
-
-      margin-bottom: 20px;
-
-    }
-
-    footer a {
-
-      color: white;
-
-      text-decoration: none;
-
-      font-weight: bold;
-
-    }
-
-    .footer-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
-      gap: 25px;
-
-      max-width: 1000px;
-
-      margin: auto;
-
-      align-items: center;
-
-    }
-
-    .small {
-
-      margin-top: 30px;
-
-      font-size: 14px;
-
-      opacity: .9;
-
-    }
-
-    @media (max-width: 700px) {
-
-      header {
-
-        justify-content: center;
-
-        text-align: center;
-
-      }
-
-      nav {
-
-        margin-top: 15px;
-
-      }
-
-      nav a {
-
-        display: inline-block;
-
-        margin: 8px 10px;
-
-      }
-
-      .hero {
-
-        padding: 70px 20px;
-
-        text-align: center;
-
-        background:
-
-          linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.88)),
-
-          url("IMG_5221.jpeg");
-
-        background-size: cover;
-
-        background-position: center;
-
-      }
-
-      .hero h1 {
-
-        font-size: 40px;
-
-      }
-
-      .hero p {
-
-        font-size: 18px;
-
-      }
-
-    }
-
-  </style>
-  </head>
-  <body>
-    <header>
-
-  <i<img src="./IMG_6093.png" class="logo"
-
-  <img src="./IMG_6093.png" class="logo"
-        <section class="hero" id="home">
-
-  <div class="hero-content">
-
-    <div class="tagline">Clean Spaces. Happy Faces.</div>
-    <h1>Professional Cleaning Services</h1>
+</h1>
 
 <p>
 
-  We provide top-quality residential, commercial, move-out, and new construction cleaning with attention to detail you can trust.
+We provide top-quality residential, commercial, move-out, and new construction cleaning with attention to detail you can trust.
 
 </p>
 
 <div class="buttons">
 
-  <a class="btn btn-purple" href="tel:6362973205">Call / Text Now</a>
+<a class="btn btn-purple" href="tel:6362973205">
 
-  <a class="btn btn-yellow" href="mailto:bandccleaningservices@myyahoo.com">Get a Free Quote</a>
+Call / Text Now
+
+</a>
+
+<a class="btn btn-yellow" href="mailto:bandccleaningservices@myyahoo.com">
+
+Get a Free Quote
+
+</a>
 
 </div>
-      </div>
 
 </section>
-        <section id="services">
 
-  <h2>Our Services</h2>
-            <div class="services">
+<h2 class="section-title">
 
-    <div class="card">
+OUR <span>SERVICES</span>
 
-      <div class="icon">🏠</div>
+</h2>
 
-      <h3>Residential Cleaning</h3>
+<section class="services">
 
-      <p>Keep your home fresh, clean, and comfortable.</p>
+<div class="card">
 
-    </div>
-              <div class="card">
+<h3>🏠 Residential Cleaning</h3>
 
-  <div class="icon">🏢</div>
-
-  <h3>Commercial Cleaning</h3>
-
-  <p>Professional cleaning for offices, stores, and businesses.</p>
+<p>Keep your home fresh, clean and comfortable.</p>
 
 </div>
 
 <div class="card">
 
-  <div class="icon">📦</div>
+<h3>🏢 Commercial Cleaning</h3>
 
-  <h3>Move-Out Cleaning</h3>
-
-  <p>Leave the space spotless for the next occupant.</p>
+<p>Professional cleaning for offices, stores and businesses.</p>
 
 </div>
 
 <div class="card">
 
-  <div class="icon">✨</div>
+<h3>📦 Move-Out Cleaning</h3>
 
-  <h3>New Construction Cleaning</h3>
-
-  <p>We remove dust and detail your new space so it shines.</p>
+<p>Leave the space spotless for the next occupant.</p>
 
 </div>
-                </div>
+
+<div class="card">
+
+<h3>✨ New Construction Cleaning</h3>
+
+<p>We remove dust and detail your new space so it shines.</p>
+
+</div>
 
 </section>
-        <section class="gallery" id="gallery">
 
-  <h2>Clean Spaces. <span>Happy Faces.</span></h2>
-            <div class="photos">
+<h2 class="section-title">
 
-    <img src="IMG_5221.jpeg" alt="Clean kitchen">
+CLEAN SPACES. <span>HAPPY FACES.</span>
 
-    <img src="IMG_5223.jpeg" alt="Clean stairs">
+</h2>
 
-    <img src="IMG_5224.jpeg" alt="Clean living area">
+<section class="gallery">
 
-    <img src="IMG_6095.jpeg" alt="Clean home">
+<div class="photos">
 
-    <img src="IMG_6098.jpeg" alt="Clean room">
+<img src="./IMG_5221.jpeg">
 
-    <img src="IMG_6099.jpeg" alt="Clean kitchen">
+<img src="./IMG_5223.jpeg">
 
-    <img src="IMG_6100.jpeg" alt="Professional cleaning">
+<img src="./IMG_5224.jpeg">
 
-  
+<img src="./IMG_6095.jpeg">
 
-  </div>
+<img src="./IMG_6098.jpeg">
+
+<img src="./IMG_6099.jpeg">
+
+<img src="./IMG_6100.jpeg">
+
+</div>
 
 </section>
-        <footer id="contact">
 
-  <div class="footer-grid">
+<footer>
 
-    <div>
+<img src="./IMG_6093.png" class="logo" alt="B & C Cleaning Services Logo">
 
-      <h3>CONTACT US</h3>
+<h2>Serving</h2>
 
-      <p>📞 <a href="tel:6362973205">(636) 297-3205</a></p>
+<p>
 
-      <p>📧 <a href="mailto:bandccleaningservices@myyahoo.com">bandccleaningservices@myyahoo.com</a></p>
+Warrenton, Wentzville, O’Fallon & surrounding areas
 
-      <p>📍 Warrenton, Wentzville, O’Fallon & surrounding areas</p>
+</p>
 
-    </div>
-    <div>
+<p>
 
-<img src="./IMG_6093.png" class="logo"
-  <p><strong>Clean Spaces. Happy Faces.</strong></p>
+📞 (636) 297-3205
 
-</div>
+</p>
 
-<div>
+<p>
 
-  <h3>SERVING</h3>
+✉️ bandccleaningservices@myyahoo.com
 
-  <p>Warrenton, Wentzville, O’Fallon & surrounding areas</p>
+</p>
 
-  <a class="btn btn-yellow" href="mailto:bandccleaningservices@myyahoo.com">Get a Free Quote</a>
+<a class="quote-btn" href="mailto:bandccleaningservices@myyahoo.com">
 
-</div>
+Get a Free Quote
 
-            <p class="small">© 2025 B & C Cleaning Services. All Rights Reserved.</p>
+</a>
+
+<p style="margin-top:30px;">
+
+© 2025 B & C Cleaning Services. All Rights Reserved.
+
+</p>
 
 </footer>
-        </body>
 
-</html>
-        
+</body>
+
+</html>   
   
   
